@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-title>
+        Register New User
+    </mat-card-title>
+    <mat-card-content>
+        <form id="formData" #userData="ngForm" (ngSubmit)="registerUser(userData.value)">
+            
+            <mat-form-field>
+                <input matInput placeholder="Firstname" name="firstname" type="text" ngModel>
+            </mat-form-field>
+            <br>
+
+            <mat-form-field>
+                <input matInput placeholder="Lastname" name="lastname" type="text" ngModel>
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field>
+                <input matInput placeholder="Email" name="email" type="email" ngModel>
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field>
+                <input matInput placeholder="Password" name="password" type="password" ngModel>
+            </mat-form-field>
+            <br>
+            
+            <mat-form-field>
+                <input matInput placeholder="Confirm Password" name="conf_pwd" type="password" ngModel>
+            </mat-form-field>
+            <br>
+
+            <button mat-flat-button color="primary" type="submit" value="Register">Submit</button>
+
+        </form>
+    </mat-card-content>
+</mat-card>
