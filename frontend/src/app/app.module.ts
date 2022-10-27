@@ -11,18 +11,22 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-//import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component'
 import { ApiService } from './services/api.service';
 import { HeaderComponent } from './header/header.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { QuestionComponent } from './question/question.component';
+
 
 
 @NgModule({
   declarations: [ 
-    AppComponent, 
-    // NavbarComponent,
-    HeaderComponent, 
-    RegisterComponent 
+    AppComponent,
+    NavbarComponent,
+    HeaderComponent,
+    RegisterComponent, 
+    WelcomeComponent, QuestionComponent 
   ],
 
   imports: [ 
@@ -33,7 +37,7 @@ import { HeaderComponent } from './header/header.component';
     BrowserAnimationsModule,
     MatToolbarModule, MatButtonModule, MatCardModule, MatInputModule,
     RouterModule.forRoot([
-      {path:"register",component:RegisterComponent}
+      // {path:"register",component:RegisterComponent}
     ])
   ],
   
